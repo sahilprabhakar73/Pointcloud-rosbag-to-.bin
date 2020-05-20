@@ -9,6 +9,6 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
 )
 
-
+include_directories(${catkin_INCLUDE_DIRS})
 add_executable(bag_to_bin src/bag_to_bin.cpp)
 target_link_libraries(bag_to_bin ${catkin_LIBRARIES})
